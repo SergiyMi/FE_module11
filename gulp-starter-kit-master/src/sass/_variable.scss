@@ -10,7 +10,7 @@
 %roboto {
   font-family: 'Roboto', serif;
 }
-// For header
+
 // color
 $gradient_start: rgb(252, 227, 138);
 $gradient_finish: rgb(243, 129, 129);
@@ -25,5 +25,3 @@ $cardcolor: rgb(149, 225, 211);
 @mixin fs($size) {
   font-size: $size;
 }
-
-// For main
