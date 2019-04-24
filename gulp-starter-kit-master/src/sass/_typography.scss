@@ -1,0 +1,11 @@
+%montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@mixin monts($fontsize) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: $fontsize;
+}

@@ -1,0 +1,29 @@
+// template
+%mont {
+  font-family: 'Montserrat', serif;
+}
+
+%kaushan {
+  font-family: 'Kaushan Script', serif;
+}
+
+%roboto {
+  font-family: 'Roboto', serif;
+}
+// For header
+// color
+$gradient_start: rgb(252, 227, 138);
+$gradient_finish: rgb(243, 129, 129);
+$white_color: rgb(255, 255, 255);
+$black_color: rgb(0, 0, 0);
+$hover_color: rgb(252, 227, 138);
+$gray_color: rgb(153, 153, 153);
+$darkgray_color: rgb(51, 51, 51);
+$cardcolor: rgb(149, 225, 211);
+
+// shrifts
+@mixin fs($size) {
+  font-size: $size;
+}
+
+// For main

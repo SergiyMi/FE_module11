@@ -1,0 +1,35 @@
+$ws: 80px;
+$marg: 20px;
+$cols: $ws + $marg;
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.col-1 {
+  width: $cols;
+}
+
+.col-4 {
+  width: $cols * 4;
+}
+
+.col-5 {
+  width: $cols * 5;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,208 @@
+.card-man {
+  min-width: 380px;
+  height: 470px;
+  float: left;
+
+  &:nth-child(2) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  &__wrp {
+    margin: 0 auto 102px auto;
+    max-width: $cols * 12;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__icon {
+    position: relative;
+    background: transparent;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    vertical-align: top;
+    z-index: 35;
+    opacity: 0;
+  }
+
+  &__name {
+    @extend %mont;
+    @include fs(14px);
+    color: $darkgray_color;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &__profession {
+    @extend %roboto;
+    font-style: italic;
+    @include fs(15px);
+    color: $gray_color;
+    text-transform: capitalize;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.card-image {
+  &__modal {
+    background-color: $cardcolor;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+  }
+
+  &__modal-2 {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#f85032),
+      to(#f7ff00)
+    );
+    background-image: -webkit-linear-gradient(top, #f85032, #f7ff00);
+    background-image: -o-linear-gradient(top, #f85032, #f7ff00);
+    background-image: linear-gradient(to bottom, #f85032, #f7ff00);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+  }
+}
+
+.icon {
+  &__facebook {
+    position: absolute;
+    right: -15px;
+    bottom: calc(50% - 30px);
+    fill: $gradient_finish;
+  }
+
+  &__twitter {
+    position: absolute;
+    right: -11px;
+    bottom: calc(50% - 30px);
+    fill: $gradient_finish;
+  }
+
+  &__pinterest {
+    position: absolute;
+    right: -12px;
+    bottom: calc(50% - 30px);
+    fill: $gradient_finish;
+  }
+
+  &__instagram {
+    position: absolute;
+    right: -12px;
+    bottom: calc(50% - 30px);
+    fill: $gradient_finish;
+  }
+}
+
+.image-man__wrp {
+  position: relative;
+  min-width: 380px;
+  height: 470px;
+  margin-bottom: 30px;
+}
+
+.card-man:hover .image-man {
+  opacity: 1;
+  z-index: 10;
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.card-man:hover .card-image__modal {
+  opacity: 1;
+  z-index: -1;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.card-man:hover .card-image__modal-2 {
+  opacity: 0.549;
+  z-index: 1;
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.card-icon__wrp {
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 25;
+}
+
+.card-man:hover .card-icon__wrp {
+  opacity: 1;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.transform {
+  display: inline-block;
+  margin-top: 50%;
+}
+
+.card-man:hover .card-man__icon {
+  background-color: $gradient_start;
+  opacity: 1;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.card-man:hover .card-man__icon:hover {
+  background-color: $gradient_finish;
+  opacity: 1;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.card-man:hover .card-man__icon:hover .icon__facebook {
+  fill: $white_color;
+}
+
+.card-man:hover .card-man__icon:hover .icon__twitter {
+  fill: $white_color;
+}
+
+.card-man:hover .card-man__icon:hover .icon__pinterest {
+  fill: $white_color;
+}
+
+.card-man:hover .card-man__icon:hover .icon__instagram {
+  fill: $white_color;
+}

@@ -1,0 +1,82 @@
+.footer {
+  max-width: $cols * 12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  margin: 0 auto;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__text {
+    color: pink;
+  }
+}
+
+/* ============================form======================= */
+
+form {
+  @include fs(0);
+  vertical-align: middle;
+}
+
+input {
+  @include fs(16px);
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  vertical-align: middle;
+}
+
+input[type='email'] {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 1rem;
+}
+
+input[type='submit'] {
+  width: 152px;
+  height: 40px;
+  background-color: $cardcolor;
+  border: none;
+  color: $white_color;
+  text-transform: uppercase;
+  @extend %mont;
+  @include fs(14px);
+  font-weight: bold;
+}
+
+input::-webkit-input-placeholder {
+  color: #e7e7e7;
+  @extend %roboto;
+  font-style: italic;
+  @include fs(15px);
+}
+
+input:-ms-input-placeholder {
+  color: #e7e7e7;
+  @extend %roboto;
+  font-style: italic;
+  @include fs(15px);
+}
+
+input::placeholder {
+  color: #e7e7e7;
+  @extend %roboto;
+  font-style: italic;
+  @include fs(15px);
+}

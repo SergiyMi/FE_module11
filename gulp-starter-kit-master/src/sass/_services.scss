@@ -1,0 +1,103 @@
+.content {
+  max-width: $cols * 12;
+  margin: 0 auto 86px auto;
+
+  &__title {
+    @extend %kaushan;
+    @include fs(24px);
+    color: $black_color;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 22px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__subtitle {
+    @extend %mont;
+    @include fs(30px);
+    text-transform: uppercase;
+    color: $black_color;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 0.7;
+
+    &::after {
+      content: '';
+      background-color: $gradient_finish;
+      width: 60px;
+      min-height: 3px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 42px;
+      margin-bottom: 66px;
+    }
+  }
+}
+
+/* =======================services================================= */
+
+.card__wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  max-width: $cols * 12;
+  padding: 0 ($marg / 2);
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 104px;
+}
+
+.card__icon {
+  width: $ws;
+  text-align: center;
+  -ms-flex-preferred-size: $ws;
+  flex-basis: $ws;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.card-text__title {
+  @extend %mont;
+  @include fs(14px);
+  color: $darkgray_color;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.card-text__section {
+  @extend %roboto;
+  @include fs(15px);
+  color: $gray_color;
+}
+
+.content__before-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: $cols * 12;
+  @include fs(15px);
+  @extend %roboto;
+  color: $gray_color;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 110px;
+  padding-right: 110px;
+  margin-bottom: 96px;
+}
